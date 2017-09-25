@@ -73,7 +73,7 @@ class ToneCloud {
   cosSquared({direction, min=0, max} = {}) {
     // Create a cosine squared up or down ramp
     var duration = (Math.PI)/2;
-    var valueCount = 100;
+    var valueCount = 5000;
     var waveArray = new Float32Array(valueCount);
     if (direction === 'ascending') {
       for (var i = 0; i < valueCount; i++) {
